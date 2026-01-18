@@ -1,0 +1,65 @@
+:root {
+  color-scheme: dark;
+  --bg: #000;
+  --fg: #fff;
+  --muted: #bdbdbd;
+  --card: #111;
+  --border: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  padding: 24px;
+}
+
+a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0 12px;
+  background: var(--card);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: var(--fg);
+  color: var(--bg);
+  border: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  padding: 16px;
+  border: 1px solid var(--border);
+  margin: 16px 0;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
